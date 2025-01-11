@@ -9,7 +9,7 @@ import { AnimatedTooltipPreview } from "@/constants/hero";
 
 export function HeroSection() {
   return (
-    <div className="py-20 relative w-full overflow-hidden bg-black">
+    <div className="py-20 relative w-full bg-black">
       <div className="relative z-10">
         <section className="grid items-center md:py-20">
           <div className="mx-auto flex max-w-[980px] flex-col items-center gap-8 text-center">
