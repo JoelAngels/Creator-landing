@@ -72,7 +72,14 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply bg-gradient-to-r from-fuchsia-300 via-teal-400 to-emerald-400 bg-clip-text text-transparent;
   }
 }
