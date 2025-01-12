@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bricolage.className} antialiased`}>{children}</body>
+      <body className={`${bricolage.className} antialiased bg-gray-950`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -18,7 +18,7 @@ export function ProductPreview() {
         />
       </div>
       <motion.div
-        className="relative mx-auto max-w-[1200px] rounded-xl border bg-background shadow-2xl"
+        className="relative mx-auto max-w-[1200px] rounded-xl p-2 border bg-background shadow-2xl"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
