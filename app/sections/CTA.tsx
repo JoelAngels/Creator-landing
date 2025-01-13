@@ -47,7 +47,7 @@ export function CTA() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="relative w-full max-w-[1200px] mx-auto overflow-hidden rounded-2xl shadow-xl aspect-[16/9]">
+      <div className="relative w-full mx-auto overflow-hidden rounded-2xl shadow-xl aspect-[16/9]">
         <AnimatePresence initial={false}>
           <motion.div
             key={currentIndex}
