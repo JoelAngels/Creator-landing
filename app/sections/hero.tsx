@@ -9,7 +9,16 @@ import { AnimatedTooltipPreview } from "@/constants/hero";
 
 export function HeroSection() {
   return (
-    <div className="py-20 relative w-full bg-black">
+    <div
+      className="py-20 relative w-full overflow-hidden bg-gradient-to-tr"
+      style={{
+        backgroundImage: `
+          linear-gradient(to top right, 
+            #e3f331 10%, 
+            #6d6aed 50%, 
+            #fdde90 90%)`,
+      }}
+    >
       <div className="relative z-10">
         <section className="grid items-center md:py-20">
           <div className="mx-auto flex max-w-[980px] flex-col items-center gap-8 text-center">
@@ -31,7 +40,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Make <span className="text-teal-300">brand deals </span>
+              Make <span className="text-[#e3f331]">brand deals </span>
               <span>happen</span>
               <span
                 className="mt-3 absolute w-full left-0 top-full -translate-y-1/2 h-4 bg-[linear-gradient(to_right,var(--color-amber-300),var(--color-teal-300),var(--color-violet-400),var(--color-fuchsia-400))]"
@@ -54,7 +63,14 @@ export function HeroSection() {
               talking. Attract brands and clients with automated analytics from
               your social media accounts.
             </motion.p>
-            <AnimatedTooltipPreview />
+            <motion.div
+              className="relative text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-white"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <AnimatedTooltipPreview />
+            </motion.div>
             <motion.div
               className="flex flex-col gap-4 min-[400px]:flex-row"
               initial={{ opacity: 0, y: -20 }}
@@ -62,10 +78,7 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <div className="flex gap-6">
-                <Button
-                  size="lg"
-                  className="bg-teal-300 text-primary-foreground"
-                >
+                <Button size="lg" className="bg-[#e3f331] text-black">
                   Get started for free
                 </Button>
 

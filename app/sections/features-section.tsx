@@ -46,7 +46,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center w-full bg-black">
+    <section className="overflow-x-hidden flex items-center justify-center w-full bg-black">
       <div className="max-w-7xl container mx-auto px-4 py-20">
         <motion.div
           className="mx-auto text-center"

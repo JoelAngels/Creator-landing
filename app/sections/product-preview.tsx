@@ -8,20 +8,19 @@ import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 export function ProductPreview() {
   return (
-    <div className="relative px-4 py-10 items-center mx-auto">
+    <div className="relative px-4 py-10 items-center mx-auto overflow-hidden">
       <div className="py-6">
         <SectionHeader
           eyebrow="Product Preview"
-          description="Empower your team with a dynamic tool to plan, track, and manage
-          progress seamlessly, driving collaboration and celebrating milestones
-          together"
+          description="🎨 Tailor your media kit to align perfectly with your personal or business brand."
         />
       </div>
       <motion.div
         className="relative mx-auto max-w-[1200px] rounded-xl p-2 border bg-background shadow-2xl"
         initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
       >
         <Image
           src="/images/dashboard.jpg"
